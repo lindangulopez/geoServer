@@ -1,0 +1,130 @@
+{
+  "profile": {
+    "project": "INRAE geoflow project",
+    "id": "geoflow_sist",
+    "name": "Geoflow SIST",
+    "organization": "INRAE",
+    "mode": "entity",
+    "logos": "https://www.za-inee.org/sites/all/themes/mnhn/logo.png",
+    "options": {
+      "line_separator": "_\n",
+      "skipFileDownload": false
+    }
+  },
+  "metadata": {
+    "entities": [
+      {
+        "handler": "ocs",
+        "source": "/MyDrive/geoflow/csv/metadata_geoflow_sist.csv"
+      }
+    ],
+    "contacts": [
+      {
+        "handler": "ocs",
+        "source": "/MyDrive/geoflow/csv/contacts_geoflow_sist.csv"
+      }
+    ],
+    "dictionary": []
+  },
+  "software": [
+    {
+      "id": "ocs-cloud",
+      "type": "input",
+      "software_type": "ocs",
+      "parameters": {
+        "url": "{{GEOFLOW_SHINY_AUTH_URL}}",
+        "user": "{{GEOFLOW_SHINY_AUTH_USER}}",
+        "pwd": "{{GEOFLOW_SHINY_AUTH_PWD}}",
+        "logger": "DEBUG"
+      },
+      "properties": []
+    },
+    {
+      "id": "geonetwork-test-idg",
+      "type": "output",
+      "software_type": "geonetwork",
+      "parameters": {
+        "url": "http://134.158.244.119/geonetwork",
+        "version": "4.2.0",
+        "user": "geoflow",
+        "pwd": "GN#IdG!23;GeofloW",
+        "logger": "DEBUG"
+      },
+      "properties": []
+    },
+    {
+      "id": "geoserver-driihm-test",
+      "type": "output",
+      "software_type": "geoserver",
+      "parameters": {
+        "url": "http://geo.driihm.fr:8080/geoserver/",
+        "user": "geoflow",
+        "pwd": "GN#IdG!23;GeofloW",
+        "logger": "DEBUG"
+      },
+      "properties": {
+        "workspace": "testworkspace",
+        "store": ""
+      }
+    },
+    {
+      "id": "zenodo",
+      "type": "output",
+      "software_type": "zenodo",
+      "parameters": {
+        "url": "https://sandbox.zenodo.org/api",
+        "token": "g2QQn1ahpB0SsbEkDlj6fOyK46uZbzWmUO5q6oxMFD9X9BqLisd7N7JcAmcS",
+        "logger": "INFO"
+      },
+      "properties": {}
+    }
+  ],
+  "actions": [
+    {
+      "id": "zen4R-deposit-record",
+      "run": true,
+      "options": {
+        "depositWithFiles": true,
+        "depositDataPattern": "",
+        "depositMetadataPattern": "",
+        "zipEachDataFile": false,
+        "publish": true,
+        "strategy": "newversion",
+        "deleteOldFiles": true,
+        "update_metadata": true,
+        "update_files": true,
+        "communities": {}
+      }
+    },
+    {
+      "id": "geometa-create-iso-19115",
+      "run": true,
+      "options": {
+        "logo": true,
+        "doi": true,
+        "doi_thumbnail": true,
+        "addfeatures": false,
+        "use_uuid": false
+      }
+    },
+    {
+      "id": "geometa-create-iso-19110",
+      "run": false
+    },
+    {
+      "id": "geonapi-publish-iso-19139",
+      "run": true,
+      "options": {
+        "geometa_inspire": false
+      }
+    },
+    {
+      "id": "geosapi-publish-ogc-services",
+      "run": true,
+      "options": {
+        "createStore": true
+      }
+    }
+  ],
+  "registers": []
+}

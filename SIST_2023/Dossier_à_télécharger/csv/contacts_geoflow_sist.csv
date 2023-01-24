@@ -1,0 +1,5 @@
+﻿Identifier,Email,OrganizationName,PositionName,LastName,FirstName,PostalAddress,PostalCode,City,Country,Voice,Facsimile,WebsiteUrl,WebsiteName
+id:metadata@inrae.fr,metadata@inrae.fr,INRAE,Ingeneer,Durand,Pierre,INRAE,31000,Toulouse,France,,,,
+id:owner@inrae.fr,owner@inrae.fr,INRAE,Ingeneer,Martin,Paul,INRAE,31000,Toulouse,France,,,,
+id:contact@inrae.fr,contact@inrae.fr,INRAE,Ingeneer,Dupond,Jacques,INRAE,31000,Toulouse,France,,,,
+,,,,,,,,,,,,,

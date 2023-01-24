@@ -1,0 +1,21 @@
+﻿Identifier;Title;Description;Subject;Creator;Date;Type;Language;SpatialCoverage;TemporalCoverage;Relation;Rights;Provenance;Data;Format
+"id:metadata_1;Test publi wil AG GEDEOP;abstract:""résumé EPCI logement"";theme[GEMET - Concepts", version 2.4]:recherche_
+theme[INSPIRE themes]:Ortho-imagerie_,
+place[Continents, countries, sea regions of the world]:France_
+topic:geoscientificInformation;metadata:metadata@inrae.fr_,,
+owner:owner@inrae.fr_,,
+pointOfContact:contact@inrae.fr;publication:2022-12-09;Dataset;fre;srid:4326;2017-07-07;;use:Utilisation libre sous réserve de mentionner la source (a minima le nom du producteur) et la date de sa dernière mise à jour_,,
+accessConstraint:otherRestrictions_,,
+useConstraint:intellectualPropertyRights_,,
+otherConstraint:Le fournisseur n’est pas en mesure de garantir l’exactitude, la mise à jour, l’intégrité, l’exhaustivité des données et en particulier qu&apos;elles sont exemptes d&apos;erreurs ou d&apos;imprécisions, notamment de localisation, d’identification ou de qualification. Aucune garantie quant à l&apos;aptitude des données à un usage particulier n&apos;est apportée par le fournisseur. Les utilisateurs utilisent les données sous leur responsabilité pleine et entière, sans recours possible contre le fournisseur dont la responsabilité ne saurait être engagée du fait d’un dommage résultant directement ou indirectement de l’utilisation de ces données. En particulier, il appartient aux utilisateurs d’apprécier, sous leur seule responsabilité : l&apos;opportunité d&apos;utiliser les données; la compatibilité des fichiers avec leurs systèmes informatiques; l’adéquation des données à leurs besoins; qu’ils disposent de la compétence suffisante pour utiliser les données. Le fournisseur n’est en aucune façon responsable des éléments extérieurs aux données et notamment des outils d’analyse, matériels, logiciels, réseaux..., utilisés pour consulter et/ou traiter les données. L’utilisateur veille à vérifier que l’actualité des informations mises à disposition est compatible avec l’usage qu’il en fait.;statement:décrire la généalogie/provenance de la donnée ;access:ocs_
+source:epci_logement.zip@/MyDrive/geoflow/data/epci_logement.zip_,,,,,,,,,,,,
+sourceType:shp_,,,,,,,,,,,,
+uploadType:shp_,,,,,,,,,,,,
+uploadSource:epci_logement.zip_,,,,,,,,,,,,
+upload:true_,,,,,,,,,,,,
+workpace:testworkspace@geoserver_,,,,,,,,,,,,
+datastore:shp_geoflow_,,,,,,,,,,,,
+layername:epci_logement_,,,,,,,,,,,,
+featureType:epci_logement_,,,,,,,,,,,,
+spatialRepresentationType:vector;distribution:application/zip[ESRI Shapefile (zipped)]_,,,,,,,,,,,,
+,,,,,,,,,,,,
